@@ -39,7 +39,7 @@ app.get('/data', (req, res) => {
             const item = items.find(i => i.itemID === itemID);
             if (item) {
                 // Generate the dynamic icon URL
-                const iconUrl = `https://freefiremobile-a.akamaihd.net/common/Local/PK/FF_UI_Icon/${item.iconName}.png`;
+                const iconUrl = `https://ffcdn-kappa.vercel.app/image?key=NayemLeakStudioBD&iconName=${item.iconName}.png`;
                 
                 // Add the URL to the item response
                 const responseItem = {
